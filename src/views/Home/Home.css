@@ -1,0 +1,76 @@
+* {
+  color: white;
+}
+
+.spendMeItem {
+  width: 20vw;
+  color: white;
+  text-align: start;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  max-width: 80%;
+  min-width: 6vw;
+  max-height: 25px;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1em;
+}
+
+.currentMonth {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60vw;
+  margin: 5%;
+  color: white;
+  gap: 5px 30px;
+  border: 1px solid white;
+  margin-left: 5%;
+}
+
+.spendTitle {
+  margin-bottom: 1%;
+}
+
+.horizFlex {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.vertFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food {
+  background-color: rgb(186, 170, 25);
+}
+.drink {
+  background-color: rgb(42, 165, 48);
+}
+
+.housing {
+  background-color: rgb(165, 116, 42);
+}
+
+.health {
+  background-color: rgb(223, 30, 133);
+}
+.utility {
+  background-color: rgb(181, 30, 223);
+}
+.car {
+  background-color: rgb(233, 57, 13);
+}
+.fun {
+  background-color: rgb(9, 184, 196);
+}
+.gas {
+  background-color: rgb(9, 196, 53);
+}

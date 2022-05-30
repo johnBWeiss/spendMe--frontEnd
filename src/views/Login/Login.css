@@ -1,0 +1,83 @@
+.loginOrRegisterBox {
+  display: flex;
+  /* background-color: black; */
+  flex-direction: column;
+  padding: 3%;
+  border-radius: 30px;
+  width: 25%;
+  box-shadow: 0px 0px 12px 0px rgb(203, 122, 122);
+}
+
+.logAndRegInput {
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 2%;
+  padding: 2%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: 1px solid grey;
+  /* opacity: 0.2; */
+  color: rgb(255, 255, 255) !important;
+}
+
+input:focus {
+  outline: rgb(228, 228, 228) 0.1px solid;
+}
+
+.sendFormButton {
+  background-color: brown;
+  border: 0px;
+  width: 60%;
+  margin: 8% auto 4% auto;
+  font-size: 1em;
+}
+.sendFormButton:hover {
+  cursor: pointer;
+  transform: scale(110%);
+  transition: 0.1s;
+  background-color: rgb(53, 3, 3);
+}
+
+.smallTextContainer {
+  font-size: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.passwordShown:hover,
+.signInOrRegisterButton:hover {
+  color: brown;
+  transform: scale(110%);
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1em;
+  text-align: start;
+  color: azure;
+  margin: 3%;
+}
+
+.inactive {
+  background-color: rgb(72, 72, 74);
+}
+
+.inactive:hover {
+  background-color: rgb(72, 72, 74);
+  transform: none;
+  cursor: none;
+}
+
+.validationError {
+  color: red;
+  /* margin-bottom: 2%; */
+}
+span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}

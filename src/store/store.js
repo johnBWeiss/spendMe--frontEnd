@@ -11,13 +11,14 @@ const initialState = {
 }
 
 const getToken = () => {
-    let tokenAndUserInfo = localStorage.getItem("tokenAndUserInfo")//TODO check exact syntax to retrieve token
-    return tokenAndUserInfo
+    let userInfoParse = localStorage.getItem(("userInfo"))
+    return JSON.parse(userInfoParse)
 
 }
 
 const tokenAndUserInfo = getToken()
 if (tokenAndUserInfo) {
+
     initialState.userToken = tokenAndUserInfo.accessToken
     initialState.userName = tokenAndUserInfo.user.userName
     initialState.userId = tokenAndUserInfo.user._id

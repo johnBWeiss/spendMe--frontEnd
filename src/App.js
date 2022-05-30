@@ -25,7 +25,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route exact path='/' element={!token ? <Login /> : <Home />} />
+          <Route exact path='/' element={<Login />} />
+
+          {/* <Route exact path='/' element={!token ? <Login /> : <Home />} /> */}
           <Route path='/home' element={<Home />} ></Route>
           <Route path='/yeardetails' element={<YearDetails />} ></Route>
           <Route path='/monthdetails' element={<MonthDetails />} ></Route>

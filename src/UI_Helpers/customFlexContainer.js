@@ -1,10 +1,11 @@
 
+import backgroundImage from '../Assets/images/bannerImage1.jpg';
 
 
 export default function Container(props) {
 
     const cssContainer = {
-        backgroundColor: props.backgroundColor || 'black',
+        backgroundColor: props.backgroundColor,
         display: props.display || 'flex',
         flexDirection: props.direction || 'row',
         justifyContent: props.justify || 'center',
@@ -12,17 +13,17 @@ export default function Container(props) {
         textAlign: props.textAlign || 'center',
         flexWrap: props.wrap || 'no-wrap',
         width: props.width || '100%',
-        paddingTop: props.paddingTop || '0%',
-        paddingBottom: props.paddingBottom || '0%',
-        backgroundImage: `url(${props.backgroundImage})`,
+        paddingTop: props.paddingTop,
+        paddingBottom: props.paddingBottom,
+        backgroundImage: `url(${props.backgroundImage})` || `url(${backgroundImage})`,
         opacity: props.opacity,
-        vh: props.vh,
-        vw: props.vh,
-        marginTop: props.marginTop || '3%',
-        marginRight: props.marginRight || 'auto',
-        marginLeft: props.marginLeft || 'auto',
-        marginBottom: props.marginBottom || '3%',
-        gap: props.gap || ' 30px 30px',
+        height: props.height,
+        width: props.width,
+        marginTop: props.marginTop,
+        marginRight: props.marginRight,
+        marginLeft: props.marginLeft,
+        marginBottom: props.marginBottom,
+        gap: props.gap,
 
 
     }
